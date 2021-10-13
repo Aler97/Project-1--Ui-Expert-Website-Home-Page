@@ -1,0 +1,25 @@
+/* Variables */
+:root {
+  --primary: #3d37f1;
+}
+
+/* Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: none;
+}
+
+/* Media Querry for Desktop */
+@media screen and (min-width: 1200px) {
+}
