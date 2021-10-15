@@ -113,6 +113,7 @@ header {
   justify-content: center;
   padding: 0 20px;
   gap: 25px;
+  margin-bottom: 30px;
 }
 
 .our-services h4 {
@@ -185,6 +186,148 @@ header {
 .five,
 .six {
   display: none;
+}
+
+/* Know about UiExpert Section */
+
+.knowaboutui {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.knowaboutui img {
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.videobrief {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videobrief p {
+  color: black;
+}
+
+/* Our Portfoilio Section */
+
+.ourportfolio {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.portfolio-text {
+  text-align: center;
+}
+
+.portfolio-text p {
+  display: none;
+}
+.portfolio-links {
+  display: none;
+}
+
+/* Select all but first child */
+.portfolios > div:not(:first-child) {
+  display: none;
+}
+
+/* Our Success Section */
+.oursuccess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.successes {
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+}
+
+.success {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.success h3 {
+  color: #4b647e;
+}
+
+/* About Us Section */
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  background-color: #0c0f32;
+}
+
+.aboutus-text {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.tohire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about_chris {
+  display: none;
+}
+
+#Chris {
+  color: #8f8bff;
+  padding-bottom: 5px;
+}
+
+.hireme {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hireme h2 {
+  padding-bottom: 8px;
+}
+
+.hireme-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.btn-findmore {
+  color: white;
+}
+
+.btn-findmore:active {
+  background-color: var(--primary);
+  box-shadow: 0 0 15px var(--primary);
 }
 
 /* Media Querry for Tablet */
