@@ -11,7 +11,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  font-size: 15px;
+  font-size: 16px;
 }
 li {
   list-style-type: none;
@@ -32,15 +32,6 @@ h1 {
 
 p {
   color: #747474;
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
 #web {
@@ -102,6 +93,22 @@ header {
   box-shadow: 0 6px 15px #ff8923;
 }
 
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Our Services Section */
 
 .our-services {
@@ -154,6 +161,21 @@ header {
 }
 .one {
   background-color: #fbba77;
+}
+.two {
+  background-color: #41eae3;
+}
+.three {
+  background-color: #69529f;
+}
+.four {
+  background-color: #4386d2;
+}
+.five {
+  background-color: #a5a2f6;
+}
+.six {
+  background-color: #ff8088;
 }
 
 .btn-readmore {
@@ -268,6 +290,7 @@ header {
 
 .success h3 {
   color: #4b647e;
+  padding-top: 8px;
 }
 
 /* About Us Section */
@@ -350,7 +373,7 @@ header {
   padding: 55px 10px;
   color: white;
   position: relative;
-  width: 70%;
+  width: 50%;
 }
 
 .design {
@@ -524,6 +547,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  width: 90%;
+  margin: auto;
 }
 .ourblog-text {
   text-align: center;
@@ -534,7 +559,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 70%;
   margin: auto;
   gap: 40px;
 }
@@ -589,7 +614,7 @@ header {
 }
 .logos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 .footeraboutus,
 .footercommunity,
@@ -603,10 +628,132 @@ header {
 .footer a {
   color: var(--primary);
 }
-/* Media Querry for Tablet */
-@media screen and (min-width: 641px) {
-}
 
-/* Media Querry for Desktop */
-@media screen and (min-width: 1025px) {
+/* Media Querry for Tablet / Desktop */
+@media screen and (min-width: 800px) {
+  /* First Section */
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .nav-bar a {
+    color: white;
+  }
+  .nav-bar a:hover {
+    border-bottom: 1px solid white;
+  }
+
+  .container {
+    background-image: url(/assets/backgroundpurple.svg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: top right;
+  }
+
+  .navbar-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  header {
+    margin-bottom: 100px;
+  }
+  main {
+    flex-direction: row;
+  }
+
+  .main-text {
+    padding-left: 35px;
+  }
+
+  main img {
+    width: 300px;
+  }
+
+  /* Our Service Section */
+  .services-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    display: flex;
+  }
+  .btn-loadmore {
+    display: none;
+  }
+  /* Our Portfolios */
+  .loadmore {
+    display: inline;
+  }
+  /* Our Success Section */
+
+  .sketch,
+  .testing {
+    display: flex;
+  }
+  .successes {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  /* Learn Section*/
+  .learn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .learncards {
+    width: 100%;
+  }
+
+  /* Our Workflow Section */
+  .workflows {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Our Blog Section */
+  .blogcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+
+  /* Companies Section */
+  .companies {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Footer Section */
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footerOne {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-column: 1;
+  }
+
+  .footerOne p {
+    display: inline;
+  }
+
+  #copyright {
+    color: black;
+  }
 }
