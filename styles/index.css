@@ -330,6 +330,105 @@ header {
   box-shadow: 0 0 15px var(--primary);
 }
 
+/* Learn Design Sketch Testing section */
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  gap: 30px;
+}
+.learncards {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  padding: 55px 10px;
+  color: white;
+  position: relative;
+  width: 70%;
+}
+
+.design {
+  background-size: fill;
+  background-image: url(/assets/imgs/design.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.design img,
+.design h3,
+.design p {
+  z-index: 1;
+  color: white;
+}
+.design:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(9, 27, 124, 0.8);
+  border-radius: 20px;
+}
+
+.sketch {
+  background-size: fill;
+  background-image: url(/assets/imgs/sketch.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sketch img,
+.sketch h3,
+.sketch p {
+  z-index: 1;
+  color: white;
+}
+.sketch:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(243, 111, 33, 0.8);
+  border-radius: 20px;
+}
+.testing {
+  background-size: fill;
+  background-image: url(/assets/imgs/testing.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.testing img,
+.testing h3,
+.testing p {
+  z-index: 1;
+  color: white;
+}
+.testing:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(165, 162, 246, 0.8);
+  border-radius: 20px;
+}
+.sketch,
+.testing {
+  display: none;
+}
+
 /* Media Querry for Tablet */
 @media screen and (min-width: 641px) {
 }
