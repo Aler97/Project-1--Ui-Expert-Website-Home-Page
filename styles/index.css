@@ -639,7 +639,7 @@ main {
   .nav-bar {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
   }
   .nav-bar a {
     color: white;

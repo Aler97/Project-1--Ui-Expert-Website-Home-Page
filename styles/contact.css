@@ -89,9 +89,6 @@ header {
   width: 95%;
   margin: auto;
   padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
 }
 
 .footer p {
@@ -127,7 +124,7 @@ header {
   .nav-bar {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
   }
   .nav-bar a {
     color: white;
@@ -187,3 +184,10 @@ header {
     gap: 15px;
   }
 }
+
+/* Huge Screens */
+@media screen and (min-width: 2000px) {
+  body {
+    max-width: 60%;
+    margin: auto;
+  }
