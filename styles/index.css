@@ -960,34 +960,30 @@ main {
   }
 
   /* Our Workflow Section */
-  .svgman{
+  .svgman {
     display: block;
-    width: 300PX
+    width: 300px;
   }
 
-  .ourworkflow{
+  .ourworkflow {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
-  .number{
+
+  .number {
     min-width: 60px;
     min-height: 60px;
-    
-  }
-  
-  .workflows{
-      justify-items: start;
   }
 
-
- 
-
+  .workflows {
+    justify-items: start;
+  }
 }
 
 /* Huge Screens */
-@media screen and (min-width:2000px){
-  body{ 
-    max-width: 60% ;
+@media screen and (min-width: 2000px) {
+  body {
+    max-width: 60%;
     margin: auto;
+  }
 }
