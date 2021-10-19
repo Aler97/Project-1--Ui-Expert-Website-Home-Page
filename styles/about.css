@@ -68,6 +68,8 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: inherit;
 }
 .btn-login {
   background: #ff8923;
