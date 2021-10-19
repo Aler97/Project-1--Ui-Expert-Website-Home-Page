@@ -34,11 +34,11 @@ p {
   color: #747474;
 }
 
-#web {
+.web {
   color: var(--primary);
 }
 
-#ui {
+.ui {
   font-weight: 100;
   color: #4b647e;
 }
@@ -94,6 +94,7 @@ header {
   grid-template-columns: 1fr;
   justify-items: center;
   overflow: hidden;
+  animation: photoAppear 1.6s linear forwards;
 }
 .text {
   display: flex;
@@ -109,6 +110,28 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: textAppear 1.6s linear forwards;
+}
+
+@keyframes textAppear {
+  0% {
+    transform: translateX(500px);
+    overflow: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    overflow: hidden;
+  }
+}
+@keyframes photoAppear {
+  0% {
+    transform: translateX(-500px);
+    overflow: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    overflow: hidden;
+  }
 }
 
 /* Footer */

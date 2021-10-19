@@ -34,11 +34,11 @@ p {
   color: #747474;
 }
 
-#web {
+.web {
   color: var(--primary);
 }
 
-#ui {
+.ui {
   font-weight: 100;
   color: #4b647e;
 }
@@ -190,5 +190,11 @@ header {
   body {
     max-width: 60%;
     margin: auto;
+    background: none;
+  }
+
+  header {
+    width: 100%;
+    justify-content: space-between;
   }
 }

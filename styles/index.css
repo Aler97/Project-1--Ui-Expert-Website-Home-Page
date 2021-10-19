@@ -34,11 +34,11 @@ p {
   color: #747474;
 }
 
-#web {
+.web {
   color: var(--primary);
 }
 
-#ui {
+.ui {
   font-weight: 100;
   color: #4b647e;
 }
@@ -101,12 +101,48 @@ main {
   align-items: center;
   gap: 20px;
 }
+
+main img {
+  animation: showImg 2s linear forwards;
+}
+
 .main-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
+  animation: shake 1s linear forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(-10px);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(6px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes showImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Our Services Section */
@@ -963,6 +999,20 @@ main {
   .svgman {
     display: block;
     width: 300px;
+    animation: movingMan 3s linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes movingMan {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
   }
 
   .ourworkflow {
