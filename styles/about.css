@@ -195,7 +195,7 @@ header {
     background-image: url(/assets/backgroundpurple.svg);
     background-repeat: no-repeat;
     background-size: 650px;
-    background-position: top right;
+    background-position: right -20px;
   }
 
   .navbar-btn {
@@ -204,6 +204,8 @@ header {
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
   }
   header {
     margin: 0 25px 150px 25px;

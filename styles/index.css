@@ -713,8 +713,8 @@ main img {
   .container {
     background-image: url(/assets/backgroundpurple.svg);
     background-repeat: no-repeat;
-    background-size: 650px;
-    background-position: top right;
+    background-size: 600px;
+    background-position: right -20px;
   }
 
   .navbar-btn {
@@ -723,6 +723,8 @@ main img {
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
   }
   header {
     margin: 0 25px 150px 25px;
@@ -831,6 +833,7 @@ main img {
   /* First Section */
   .container {
     background-size: 700px;
+    background-position: ;
   }
 
   header {
