@@ -69,7 +69,6 @@ header {
   font-weight: 700;
   cursor: pointer;
   border: none;
-  outline: inherit;
 }
 .btn-login {
   background: #ff8923;
