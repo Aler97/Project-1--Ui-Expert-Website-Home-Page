@@ -673,6 +673,25 @@ main img {
   color: var(--primary);
 }
 
+/* Small screens */
+@media screen and (max-width: 500px) {
+  body {
+    width: 95%;
+    margin: auto;
+  }
+
+  .aboutus {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .number {
+    width: 3em;
+    height: 3em;
+    padding-top: 1em;
+  }
+}
+
 /* Media Querry for Tablet / Desktop */
 @media screen and (min-width: 800px) {
   /* First Section */
