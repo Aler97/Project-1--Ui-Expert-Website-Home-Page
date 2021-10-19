@@ -112,26 +112,27 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  animation: textAppear 1.6s linear forwards;
+  animation: textAppear 2s linear forwards;
 }
 
 @keyframes textAppear {
   0% {
-    transform: translateX(500px);
+    visibility: hidden;
+    transform: scale(0);
     overflow: hidden;
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
     overflow: hidden;
   }
 }
 @keyframes photoAppear {
   0% {
-    transform: translateX(-500px);
+    transform: scale(0);
     overflow: hidden;
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
     overflow: hidden;
   }
 }
