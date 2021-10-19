@@ -112,10 +112,10 @@ main img {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  animation: shake 1s linear forwards;
+  animation: Jump 1s linear forwards;
 }
 
-@keyframes shake {
+@keyframes Jump {
   0% {
     transform: translateY(-10px);
   }
