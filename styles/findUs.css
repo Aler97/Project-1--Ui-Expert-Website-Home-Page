@@ -96,6 +96,12 @@ header {
   margin: auto;
 }
 
+.map iframe {
+  width: 90%;
+  margin: auto;
+  height: 300px;
+}
+
 .contactInfo {
   animation: Shake 0.5s ease-in-out forwards;
   margin-bottom: 40px;
