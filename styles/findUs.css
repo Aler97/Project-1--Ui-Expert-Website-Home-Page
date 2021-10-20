@@ -70,6 +70,11 @@ header {
   cursor: pointer;
   border: none;
 }
+
+.btn:active {
+  transform: scale(0.95);
+}
+
 .btn-login {
   background: #ff8923;
   border-color: #ff8923;
@@ -106,6 +111,10 @@ header {
 .contactInfo {
   animation: Shake 0.5s ease-in-out forwards;
   margin-bottom: 40px;
+}
+
+.contactInfo h3 {
+  padding-bottom: 10px;
 }
 
 @keyframes Shake {

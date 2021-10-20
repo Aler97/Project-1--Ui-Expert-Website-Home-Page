@@ -73,6 +73,10 @@ header {
   border: none;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 .btn-waveme {
   background-color: var(--primary);
   color: white;
@@ -396,6 +400,7 @@ main img {
 }
 .btn-findmore {
   color: white;
+  border: 1px solid white;
 }
 
 .btn-findmore:active {

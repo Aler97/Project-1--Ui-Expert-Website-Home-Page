@@ -78,6 +78,10 @@ header {
   margin-top: 8px;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 .btn-login:hover,
 .btn-login:active {
   box-shadow: 0 6px 15px #ff8923;
@@ -97,7 +101,7 @@ header {
   grid-template-columns: 1fr;
   justify-items: center;
   overflow: hidden;
-  animation: photoAppear 1.6s linear forwards;
+  animation: photoAppear 1s linear forwards;
 }
 .text {
   display: flex;
@@ -113,7 +117,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  animation: textAppear 2s linear forwards;
+  animation: textAppear 1s linear forwards;
 }
 
 @keyframes textAppear {
