@@ -184,6 +184,7 @@ main img {
   align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  max-width: 80%;
 }
 
 .service-card {
@@ -192,15 +193,18 @@ main img {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding: 30px 0;
   color: white;
   text-align: center;
+  border-radius: 10px;
 }
 
 .service-card p {
   color: white;
+  width: 90%;
+  margin: auto;
 }
 .one {
   background-color: #fbba77;
@@ -748,10 +752,23 @@ main img {
     margin: auto;
     text-align: center;
   }
+
+  .services-text p {
+    max-width: 85%;
+    margin: auto;
+  }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
   }
+
+  .service-card {
+    width: 80%;
+    margin: auto;
+  }
+
   .two,
   .three,
   .four,
@@ -759,8 +776,13 @@ main img {
   .six {
     display: flex;
   }
+
   .btn-loadmore {
     display: none;
+  }
+
+  .btn-readmore {
+    border: 1px solid white;
   }
   /* Our Portfolios */
   .loadmore {
@@ -833,7 +855,6 @@ main img {
   /* First Section */
   .container {
     background-size: 700px;
-    background-position: ;
   }
 
   header {
@@ -877,6 +898,7 @@ main img {
 
   /* Our Services Section */
   .grid {
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 90%;
     margin: auto;
   }
