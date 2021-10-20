@@ -73,6 +73,11 @@ header {
   border: none;
 }
 
+button:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 .btn:active {
   transform: scale(0.95);
 }
