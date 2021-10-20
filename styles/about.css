@@ -70,6 +70,12 @@ header {
   cursor: pointer;
   border: none;
 }
+
+button:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 .btn-login {
   background: #ff8923;
   border-color: #ff8923;
